@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Promise Day</title>
+<style>
+body{
+font-family:Arial;
+background:#ffe6eb;
+text-align:center;
+padding-top:70px;
+}
+.box{
+background:white;
+padding:25px;
+margin:auto;
+width:90%;
+max-width:380px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+button{
+padding:12px 25px;
+font-size:18px;
+margin:12px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+.yes{background:#ff4d6d;color:white;}
+.no{background:#555;color:white;}
+#result{margin-top:20px;font-size:17px;}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>💌 Promise Day</h2>
+<p>Choose wisely, Kartik 👀</p>
+
+<button class="yes" onclick="yes()">YES ❤️</button>
+<button class="no" onclick="no()">NO ❌</button>
+
+<div id="result"></div>
+</div>
+
+<script>
+function yes(){
+document.getElementById("result").innerHTML =
+"💍 Yay Kartik!<br><br>You chose YES ❤️<br>This means you accept my promise 🤍<br><br>I promise to stand by you always 🤞✨<br><b>— Gauri</b>";
+}
+function no(){
+document.getElementById("result").innerHTML =
+"😌 Oops Kartik!<br><br>You’re not allowed to choose NO ❌<br>Because you’re already <b>ENGAGED to Gauri</b> 💍🤍<br>Only FOREVER is allowed 🤞✨";
+}
+</script>
+
+</body>
+</html>
